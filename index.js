@@ -9,7 +9,7 @@ const app = express();
 const cors=require('cors');
     
 app.listen(PORT, 
-    () => console.log("Server Starts"));
+    () => console.log(`Server Starts on port ${PORT}`));
     
 app.use(express.static('public'));
 app.use(cors());
